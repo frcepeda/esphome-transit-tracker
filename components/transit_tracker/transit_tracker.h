@@ -1,5 +1,7 @@
 #pragma once
 
+#define WEBSOCKETS_TCP_TIMEOUT (2000)
+
 #include <map>
 #include <ArduinoWebsockets.h>
 
