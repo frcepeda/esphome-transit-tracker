@@ -1,6 +1,6 @@
 #pragma once
 
-#define WEBSOCKETS_TCP_TIMEOUT (2000)
+#define WEBSOCKETS_TCP_TIMEOUT (1000)
 
 #include <map>
 #include <ArduinoWebsockets.h>
