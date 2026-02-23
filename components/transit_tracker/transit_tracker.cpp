@@ -52,6 +52,8 @@ void TransitTracker::setup() {
 }
 
 void TransitTracker::loop() {
+  watchdog::WatchdogManager wdm(30000);
+  
   this->ws_client_.poll();
 
   if (this->last_heartbeat_ != 0 && millis() - this->last_heartbeat_ > 60000) {
